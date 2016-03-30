@@ -1,0 +1,30 @@
+[user]
+  name = Ivan Olivares R.
+  email = hola@ivolivares.cl
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+[core]
+  editor = subl
+  filemode = false
+  excludesfile = /home/iolivares/.gitignore_global
+[credential]
+  helper = cache --timeout=99999999
+[alias]
+  today = !git log --since=midnight --author=\"$(git config user.name)\" --oneline
+[branch]
+  autosetuprebase = never
+  autossetupmerge = true
+[color]
+  ui = true
+[apply]
+  whitespace = warn
+[merge]
+  conflictstyle = diff3
+[cola]
+  fontdiff = Cousine,10,-1,5,50,0,0,0,0,0
+  tabwidth = 2
+  linebreak = false
+[gui]
+  editor = subl
