@@ -27,4 +27,4 @@
   tabwidth = 2
   linebreak = false
 [gui]
-  editor = subl
+  editor = vim
